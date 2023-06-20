@@ -1,0 +1,8 @@
+
+{ "chromeWebSecurity": false ,
+"pageLoadTimeout ": 60000,
+"force": true
+
+}
+
+

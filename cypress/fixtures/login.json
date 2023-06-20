@@ -1,0 +1,29 @@
+{
+    "login":{
+        "email":"nagtest9@mailinator.com",
+        "password":"Nag@1525",
+        "code":"12345"
+        
+    },
+    "signin":{
+        "email":"msubbu123",
+        "password":"345677",
+        "code":"12345"
+        
+    },
+    "register":{
+        "First_Name":"Modapuru",
+        "lost_Name":"Subbarayudu",
+        "email":"modapururayudu@gmail.com",
+        "password":"123456",
+        "phone_number":"12345678901"
+    },
+    "resign":{
+        
+    },
+    "releaf":{
+        
+    }
+
+    
+}
