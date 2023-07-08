@@ -1,5 +1,5 @@
-export class Register{
-    Cryptho(userinfo){
+export class Register {
+    Cryptho(userinfo) {
         cy.get('[placeholder="Enter first name"]').should('be.visible').type(userinfo.First_Name);
         cy.get('[placeholder="Enter last name"]').should('be.visible').type(userinfo.lost_Name);
         cy.get('[placeholder="Enter email address"]').should('be.visible').type(userinfo.email);
@@ -12,55 +12,55 @@ export class Register{
         cy.wait(2000);
 
     }
-    Subaru(userinfo){
+    Subaru(userinfo) {
         //cy.get(':nth-child(1) > :nth-child(1) > .row > :nth-child(1) > .incentive-block > :nth-child(1) > .my-3._theme_font_bold').should('be.visible')
         cy.get('body').then(($msr) => {
-            if($msr.find('[class="my-3 _theme_font_bold font-weight-bold"]').eq(0).lenth > 0){
+            if ($msr.find('[class="my-3 _theme_font_bold font-weight-bold"]').eq(0).lenth > 0) {
                 this.shouldHaveText('Lease a new 2022 Forester for $285/Month').shuld('be.visibe')
             }
-            else if($msr.find('[class="my-3 _theme_font_bold font-weight-bold"]').eq(0).lenth > 0){
+            else if ($msr.find('[class="my-3 _theme_font_bold font-weight-bold"]').eq(0).lenth > 0) {
                 this.shouldHaveText('Lease a new 2022 Forester for $285/Month').shuld('not.be.visibe')
             }
-            else('element notb found')
+            else ('element notb found')
 
         })
-        cy.get('[type="checkbox"]').eq(0).click({force: true});
+        cy.get('[type="checkbox"]').eq(0).click({ force: true });
 
-        
-        
-        
+
+
+
 
     }
-    subbu(userinfo){
-        cy.get('[type="checkbox"]').check({force: true}) // Check checkbox element
-       // cy.get('[type="radio"]').first().check() 
+    subbu(userinfo) {
+        cy.get('[type="checkbox"]').check({ force: true }) // Check checkbox element
+        // cy.get('[type="radio"]').first().check() 
         cy.get('[class="d-flex align-items-center justify-content-between"]').first().check()
-        .as('checkboxes')
-        .check()
-  
-      cy.get('@checkboxes')
-        .each(checkbox => {
-          expect(checkbox[0].checked).to.equal(true)
-        })
-    
+            .as('checkboxes')
+            .check()
+
+        cy.get('@checkboxes')
+            .each(checkbox => {
+                expect(checkbox[0].checked).to.equal(true)
+            })
+
 
     }
-    china(userinfo){
-        
-        
-            for (var i= 1; i <= 13; i++) {
+    china(userinfo) {
 
-                cy.get('.col-lg-3 > :nth-child(1) > :nth-child(2) > .d-flex' + i + "]").click()
-             }
-                 
-             
-        
-    }
-    facebook(userinfo){
-        
-    }
-    
 
-    
+        for (var i = 1; i <= 13; i++) {
+
+            cy.get('.col-lg-3 > :nth-child(1) > :nth-child(2) > .d-flex' + i + "]").click()
+        }
+
+
+
+    }
+    facebook(userinfo) {
+
+    }
+
+
+
 
 }
